@@ -5,72 +5,99 @@
 body{
     width: 100%;
     height: auto;
-    /* background-color: rgb(0, 0, 0); */
-}
-header{
-    margin-top: 1rem;
-}
-header img{
-    width: 10%;
-    margin-left: 5%;
-}
-.more{
-    margin-top: -4.8rem;
-    margin-left: 77%;
+    background-color: #E5B3FF;
+}   
+header nav .logo{
+    width: 90%; 
+    margin: auto;
     display: flex;
+    /* background-color: red;  */
 }
-header .more button{
-    font-size: 16px;
-    color: rgb(92, 107, 192);
-    padding: 10px 20px;
-    border: 2px solid rgb(92, 107, 192);
-    border-radius: 2rem;
-    background-color: rgba(92, 107, 192, 0.2);
+header .logo img{
+    width: 12%;
+    margin-right: 20rem;
 }
-header .more button:hover{
+header nav .logo .items{
+    display: flex;
+} 
+header .logo .navigate{
+    font-size: 20px;
+    color: #8C1F66;
+    padding-right: 50px;
+    margin-top: 3.5rem;
+    text-decoration: none;
+}
+header nav .logo .port {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #8C1F66;
+    text-decoration: none;
+    /* padding: 8px 10px; */
+    /* border: 2px solid rgb(213, 13, 217); */
+    /* border-radius: 2rem; */
+    /* background-color: rgba(213, 13, 217, 0.1); */
+    margin-top: 3.5rem; 
+    margin-right: 2rem;   
+}
+header .port:hover{
     cursor: pointer;
     color: #FFFF;
-    background-color: rgb(92, 107, 192);
+    /* background-color: rgb(213, 13, 217); */
 }
-.more i{
-    font-size: 45px;
-    color:#b9b9b9;
-    padding-left: 2rem;
+header nav .logo .moon-icon{
+    font-size: 30px;
+    color: black;
+    padding: 5px 6.5px;
+    border: 2px;
+    border-radius: 50px;
+    margin-top: 3rem; 
+    margin-right: 2.4rem;
+    float: right;
 }
-body .bio{
+header .moon-icon:hover{
+    font-size: 25px;
+    color: #ffff;
+    /* background: #8c8c8c; */
+}
+header #menuBar, header #close{
+    display: none;
+}
+header .bio{
     width: 80%;
     margin: auto;
 }
-body .bio h1{
+header .bio h1{
     font-size: 55px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFF;
     text-align: center;
     font-weight: 900;
     padding-top: 1.5rem;
 }
-body .bio span{
-    color: rgb(92, 107, 192);
+header .bio span{
+    color: #8C1F66;
 }
-body .bio .profile{
-    width: 35%;
+/* header .bio .profile{ */
+    /* width: 30%; */
+    /* margin: auto; */
+/* } */
+/* header .bio .profile img{ */
+    /* width: 20rem; */
+/* } */
+header .bio .illustration{
+    width: 85%;
     margin: auto;
+    padding-top: 2rem;
 }
-body .bio .profile img{
-    width: 20rem;
-}
-body .bio .accessories{
-    width: 95%;
-    margin: auto;
-}
-body .bio .accessories img{
-    width: 60rem;
+header .bio .illustration img{
+    width: 55rem;
 }
 /* INTRODUCTORY SECTION */
 .intro{
     width: 100%;
     height: 60vh;
     margin-top: -2.15%;
-    background: linear-gradient(180deg, rgba(73,90,185,1) 18%, rgba(63,81,181,1) 60%, rgba(159,168,218,1) 97%, rgba(40,53,147,1) 100%);
+    background: #400036;
 }
 .intro h1 {
     font-size: 30px;
@@ -103,7 +130,7 @@ body .bio .accessories img{
 .box h1{
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(92, 107, 192);
+    color: #8C1F66;
     text-align: center;
     font-weight: 900;
     padding-top: 1rem;
@@ -119,12 +146,12 @@ body .bio .accessories img{
 .box .stack .items div p{
     font-size: 16px;
     font-weight: 600;
-    color: rgb(92, 107, 192);
+    color: #8C1F66;
     padding-top: 2.5rem;
 }
 .box .stack .items div i{
     font-size: 30px;
-    color: rgb(92, 107, 192);
+    color: #8C1F66;
     padding-top: 2rem;
     padding-left: 1rem;
 }
@@ -142,7 +169,7 @@ body .bio .accessories img{
 .title h1{
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(92, 107, 192);
+    color: #8C1F66;
     text-align: center;
     font-weight: 900;
     padding-top: 1rem;
@@ -150,60 +177,64 @@ body .bio .accessories img{
 .title img{
     width: 15%;
 }
-.portfolio, .chirp, .crappo, .gradie, .harvoxx{
+.portfolio, .chirp, .crappo, .gradie, .converter, .harvoxx{
     width: 100%;
     margin: auto;
     margin-top: 5rem;
     display: flex;
 }
-.portfolio .left-side, .chirp .left-side, .crappo .left-side, .gradie .left-side, .harvoxx .left-side{
+.portfolio .left-side, .chirp .left-side, .crappo .left-side, .gradie .left-side, .converter.left-side,
+ .harvoxx .left-side{
     width: 80%;
 }
-.portfolio .left-side h3, .chirp .left-side h3, .crappo .left-side h3, .gradie .left-side h3, .harvoxx .left-side h3{
+.portfolio .left-side h3, .chirp .left-side h3, .crappo .left-side h3, .gradie .left-side h3,
+ .converter .left-side h3, .harvoxx .left-side h3{
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #8C1F66;
     margin-bottom: 3%;
 }
-.portfolio .left-side p, .chirp .left-side p, .crappo .left-side p, .gradie .left-side p, .harvoxx .left-side p{
+.portfolio .left-side p, .chirp .left-side p, .crappo .left-side p, .gradie .left-side p, 
+.converter .left-side p, .harvoxx .left-side p{
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #263238;
+    color: #ffff;
     opacity: 0.7;
     line-height: 28px;
 }
 .portfolio .left-side button, .chirp .left-side button, .crappo .left-side button,
- .gradie .left-side button, .harvoxx .left-side button{
+ .gradie .left-side button, .converter .left-side button, .harvoxx .left-side button{
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
-    color: rgb(92, 107, 192);
+    color: #D50DD9;
     padding: 10px 15px;
-    border: 2px solid rgb(92, 107, 192);
+    border: 2px solid #400036;
     background-color: #FFFF;
     margin-top: 5%;
     margin-left: 5px;
 }
 .portfolio .left-side button:hover, .chirp .left-side button:hover, 
-.crappo .left-side button:hover, .gradie .left-side button:hover,
+.crappo .left-side button:hover, .gradie .left-side button:hover, .converter .left-side button:hover,
 .harvoxx .left-side button:hover{
     cursor: pointer;
     color: #FFFF;
-    background-color: rgb(92, 107, 192);
+    background-color: #D50DD9;
 }
 .portfolio .right-side, .chirp .right-side, .crappo .right-side, 
-.gradie .right-side, .harvoxx .right-side{
+.gradie .right-side, .converter .right-side, .harvoxx .right-side{
     width: 100%;
     margin-left: 5%;
 }
 .portfolio .right-side img, .chirp .right-side img, .crappo .right-side img, 
-.gradie .right-side img, .harvoxx .right-side img{
+.gradie .right-side img, .converter .right-side img, .harvoxx .right-side img{
     width: 39rem;
     box-shadow: 2px 8px 8px 5px rgb(159, 168, 218);
     position: relative;
     border-top: 5px solid white;
 }
 .portfolio .right-side img:hover, .chirp .right-side img:hover, .crappo .right-side img:hover,
-.gradie .right-side img:hover, .harvoxx .right-side img:hover{
+.gradie .right-side img:hover, .converter .right-side img:hover, .harvoxx .right-side img:hover{
     cursor: pointer;
 }
 /* Contact-Me Section */
@@ -211,7 +242,7 @@ body .bio .accessories img{
     width: 100%;
     height: 125vh;
     margin-top: 5%;
-    background: linear-gradient(180deg, rgba(73,90,185,1) 18%, rgba(63,81,181,1) 60%, rgba(159,168,218,1) 97%, rgba(40,53,147,1) 100%);
+    background: #d1a3eb;
 }
 .contact-me .contact{
     width: 20%;
@@ -227,7 +258,7 @@ body .bio .accessories img{
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
-    color: #FFFF;
+    color: #D50DD9;
     margin-bottom: 1rem;
 }
 .contact-me .phone, .contact-me .mail{
@@ -239,15 +270,15 @@ body .bio .accessories img{
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px 20px;
-    box-shadow: 2px 5px 5px 0px;
+    box-shadow: rgb(224, 213, 213) 2px 5px 5px 0px;
     position: relative;
-    background-color: rgb(94, 110, 204);
+    background-color: #d1a3eb;
     margin-top: 1rem;
     width: 90%;
 }
 .contact-me .phone p:hover, .contact-me .mail p:hover{
     cursor: pointer;
-    box-shadow: rgb(255, 255, 255, 0.5) 2px 5px 3px 0px;
+    box-shadow: rgba(75, 3, 45, 0.952) 2px 5px 3px 0px;
 }
 .contact-me .phone p i, .contact-me .mail p i{
     font-size: 25px;
@@ -277,14 +308,15 @@ body .bio .accessories img{
     font-size: 18px;
     color: #FFFF;
     width: 25.4rem;
-    border: 2px solid #FFFF;
-    background-color: rgb(94, 110, 204);
+    border: 2px solid #400036;
+    background-color: #400036;
     margin-top: 5%;
 }
 .contact-me .address .submit:hover{
     color: rgb(94, 110, 204);
     cursor: pointer;
     box-shadow: 0 0 35px #1d2f92;
+    border: none;
     border-radius: 2rem;
     background: #FFFF;
 }
@@ -292,7 +324,7 @@ body .bio .accessories img{
 footer{
     width: 100%;
     height: 70vh;
-    background-color: rgb(49, 46, 46);
+    background-color: #400036; 
 }
 footer .logo{
     width: 15%;
@@ -326,9 +358,67 @@ footer .copy{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(92, 107, 192);
+    background-color: #630d56;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background-color: rgb(92, 107, 192);
+    background-color: #630d56;
 } 
+
+/* Media Query */
+@media only screen and (max-width: 1000px){
+    header nav{
+        display: flex;
+        overflow: hidden;
+        width: 80%;
+        margin: auto;
+    }
+    header .logo img{
+        width: 30%;
+        margin-top: -1%;
+        margin-left: -10%;
+    }
+    header .moon-icon{
+        font-size: 18px;
+        padding: 3px 4.6px;
+        margin-top: 20px;
+        margin-right: 1rem;
+    }
+    header .logo .port{
+        display: none;
+    }
+    header .link{
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(92, 107, 192);
+        text-decoration: none;
+        display: none;
+    }
+    header #menuBar{
+        font-size: 25px;
+        display: block;
+        margin-top: 7%;
+    }
+    header #close{
+        font-size: 25px;
+        margin-top: 7%;
+    }
+    header .bio{
+        width: 90%;
+        margin: auto;
+    }
+    header .bio h1{
+        font-size: 29px;
+        font-weight: 900;
+        text-align: center;
+        overflow: hidden;
+    }
+    header .bio .profile img{
+       margin: auto;
+        width: 10rem;
+    }
+    header .bio .illustration img{
+        margin: auto;
+        width: 10rem;
+    }
+}
