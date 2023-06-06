@@ -18,7 +18,7 @@ body{
 }  
 header{
     width: 100%;
-    background-color: #E5B3FF;
+    background-color: #e7c6ff;
 } 
 header nav .logo{
     width: 90%; 
@@ -29,7 +29,7 @@ header nav .logo{
 header .logo .logo-img img{
     width: 22%;
     margin-right: 10rem;
-    margin-top: 0.5rem;
+    margin-top: 2.5rem;
 }
 header nav .logo .items{
     display: flex;
@@ -84,9 +84,9 @@ header .bio .txt-anim{
     content: '|';
     position: absolute;
     right: 0;
-    color: #ffff;
-    background-color: var(--primary-color);
-    width: 100%;
+    color: var(--secondary-color);
+    background-color: #e7c6ff;
+    width: 73%;
     animation: typing 3s steps(24) alternate infinite,
                 line 1s infinite;
 }
@@ -121,7 +121,7 @@ header .bio .illustration img{
 /* INTRODUCTORY SECTION */
 .about-me{
     width: 100%;
-    background-color: #E5B3FF;
+    background-color: #e7c6ff;
     height: 100vh;
 }
 .intro{
@@ -274,7 +274,7 @@ header .bio .illustration img{
     width: 100%;
     height: 125vh;
     margin-top: 5%;
-    background: rgb(224, 218, 218);
+    background: #e7c6ff;
 }
 .contact-me .contact{
     width: 20%;
