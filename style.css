@@ -2,62 +2,65 @@
     margin: 0%;
     padding: 0%;
 }
+:root{ 
+     --primary-color: #E5B3FF;
+     --secondary-color: #8C1F66;  
+     
+ } 
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #f01ca6; 
+}
 body{
     width: 100%;
     height: auto;
+    background: #ffff;
+}  
+header{
+    width: 100%;
     background-color: #E5B3FF;
-}   
+} 
 header nav .logo{
     width: 90%; 
     margin: auto;
     display: flex;
     /* background-color: red;  */
 }
-header .logo img{
-    width: 12%;
-    margin-right: 20rem;
+header .logo .logo-img img{
+    width: 22%;
+    margin-right: 10rem;
+    margin-top: 0.5rem;
 }
 header nav .logo .items{
     display: flex;
+    width: 50%;
 } 
 header .logo .navigate{
-    font-size: 20px;
-    color: #8C1F66;
-    padding-right: 50px;
+    font-size: 18px;
+    color: var(--secondary-color);
+    padding-right: 30px;
     margin-top: 3.5rem;
     text-decoration: none;
 }
 header nav .logo .port {
-    font-size: 20px;
+    font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #8C1F66;
+    color: var(--secondary-color);
     text-decoration: none;
-    /* padding: 8px 10px; */
-    /* border: 2px solid rgb(213, 13, 217); */
-    /* border-radius: 2rem; */
-    /* background-color: rgba(213, 13, 217, 0.1); */
     margin-top: 3.5rem; 
     margin-right: 2rem;   
 }
-header .port:hover{
+header .items a:hover{
     cursor: pointer;
     color: #FFFF;
-    /* background-color: rgb(213, 13, 217); */
 }
-header nav .logo .moon-icon{
-    font-size: 30px;
-    color: black;
-    padding: 5px 6.5px;
-    border: 2px;
-    border-radius: 50px;
-    margin-top: 3rem; 
-    margin-right: 2.4rem;
+header nav .logo .items #toggleDark{
+    font-size: 24px;
+    margin-top: 3.3rem; 
     float: right;
 }
-header .moon-icon:hover{
-    font-size: 25px;
-    color: #ffff;
-    /* background: #8c8c8c; */
+header #toggleDark:hover{
+    cursor: pointer;
 }
 header #menuBar, header #close{
     display: none;
@@ -69,13 +72,36 @@ header .bio{
 header .bio h1{
     font-size: 55px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #FFFF;
+    color: #ffff;
     text-align: center;
     font-weight: 900;
     padding-top: 1.5rem;
 }
+header .bio .txt-anim{
+    position: relative;
+}
+.txt-anim::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: #ffff;
+    background-color: var(--primary-color);
+    width: 100%;
+    animation: typing 3s steps(24) alternate infinite,
+                line 1s infinite;
+}
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
+@keyframes line{
+    50%{
+        color: transparent;
+    }
+}
 header .bio span{
-    color: #8C1F66;
+    color: var(--secondary-color);
 }
 /* header .bio .profile{ */
     /* width: 30%; */
@@ -93,11 +119,16 @@ header .bio .illustration img{
     width: 55rem;
 }
 /* INTRODUCTORY SECTION */
+.about-me{
+    width: 100%;
+    background-color: #E5B3FF;
+    height: 100vh;
+}
 .intro{
     width: 100%;
     height: 60vh;
     margin-top: -2.15%;
-    background: #400036;
+    background: linear-gradient(180deg, #8C1F66 0%, #330c2f 15%);
 }
 .intro h1 {
     font-size: 30px;
@@ -130,7 +161,7 @@ header .bio .illustration img{
 .box h1{
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #8C1F66;
+    color: #023e8a;
     text-align: center;
     font-weight: 900;
     padding-top: 1rem;
@@ -146,12 +177,12 @@ header .bio .illustration img{
 .box .stack .items div p{
     font-size: 16px;
     font-weight: 600;
-    color: #8C1F66;
+    color: #023e8a;
     padding-top: 2.5rem;
 }
 .box .stack .items div i{
     font-size: 30px;
-    color: #8C1F66;
+    color: #023e8a;
     padding-top: 2rem;
     padding-left: 1rem;
 }
@@ -169,7 +200,7 @@ header .bio .illustration img{
 .title h1{
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #8C1F66;
+    color: #023e8a;
     text-align: center;
     font-weight: 900;
     padding-top: 1rem;
@@ -191,14 +222,14 @@ header .bio .illustration img{
  .converter .left-side h3, .harvoxx .left-side h3{
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #8C1F66;
+    color: #023e8a;;
     margin-bottom: 3%;
 }
 .portfolio .left-side p, .chirp .left-side p, .crappo .left-side p, .gradie .left-side p, 
 .converter .left-side p, .harvoxx .left-side p{
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #ffff;
+    color: #000106;
     opacity: 0.7;
     line-height: 28px;
 }
@@ -207,9 +238,10 @@ header .bio .illustration img{
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
-    color: #D50DD9;
+    color: #023e8a;;
     padding: 10px 15px;
-    border: 2px solid #400036;
+    border: 2px solid #023e8a;;
+    border-radius: 10px;
     background-color: #FFFF;
     margin-top: 5%;
     margin-left: 5px;
@@ -219,7 +251,7 @@ header .bio .illustration img{
 .harvoxx .left-side button:hover{
     cursor: pointer;
     color: #FFFF;
-    background-color: #D50DD9;
+    background-color: #023e8a;;
 }
 .portfolio .right-side, .chirp .right-side, .crappo .right-side, 
 .gradie .right-side, .converter .right-side, .harvoxx .right-side{
@@ -242,7 +274,7 @@ header .bio .illustration img{
     width: 100%;
     height: 125vh;
     margin-top: 5%;
-    background: #d1a3eb;
+    background: rgb(224, 218, 218);
 }
 .contact-me .contact{
     width: 20%;
@@ -251,14 +283,14 @@ header .bio .illustration img{
 }
 .contact-me .contact .bxs-contact{
     font-size: 60px;
-    color: #FFFF;
+    color: #023e8a;
     margin-left: 6rem;
 }
 .contact-me .contact h1{
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
-    color: #D50DD9;
+    color: #023e8a;
     margin-bottom: 1rem;
 }
 .contact-me .phone, .contact-me .mail{
@@ -272,13 +304,13 @@ header .bio .illustration img{
     padding: 10px 20px;
     box-shadow: rgb(224, 213, 213) 2px 5px 5px 0px;
     position: relative;
-    background-color: #d1a3eb;
+    background-color: rgb(153, 166, 241);
     margin-top: 1rem;
     width: 90%;
 }
 .contact-me .phone p:hover, .contact-me .mail p:hover{
     cursor: pointer;
-    box-shadow: rgba(75, 3, 45, 0.952) 2px 5px 3px 0px;
+    box-shadow: rgba(2, 62, 138, 0.952) 2px 5px 3px 0px;
 }
 .contact-me .phone p i, .contact-me .mail p i{
     font-size: 25px;
@@ -308,8 +340,9 @@ header .bio .illustration img{
     font-size: 18px;
     color: #FFFF;
     width: 25.4rem;
-    border: 2px solid #400036;
-    background-color: #400036;
+    border: 2px solid #023e8a;
+    border-radius: 5px;
+    background-color: #023e8a;
     margin-top: 5%;
 }
 .contact-me .address .submit:hover{
@@ -324,7 +357,7 @@ header .bio .illustration img{
 footer{
     width: 100%;
     height: 70vh;
-    background-color: #400036; 
+    background: linear-gradient(180deg, #8C1F66 0%, #330c2f 15%); 
 }
 footer .logo{
     width: 15%;
