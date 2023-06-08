@@ -128,7 +128,7 @@ header .bio .illustration img{
     width: 100%;
     height: 60vh;
     margin-top: -2.15%;
-    background: linear-gradient(180deg, #8C1F66 0%, #330c2f 15%);
+    background: linear-gradient(180deg, #8C1F66 30%, #330c2f 100%);
 }
 .intro h1 {
     font-size: 30px;
@@ -214,27 +214,28 @@ header .bio .illustration img{
     margin-top: 5rem;
     display: flex;
 }
-.portfolio .left-side, .chirp .left-side, .crappo .left-side, .gradie .left-side, .converter.left-side,
- .harvoxx .left-side{
+.portfolio .right-side, .chirp .right-side, .crappo .right-side, .gradie .right-side, .converter.right-side,
+ .harvoxx .right-side{
     width: 80%;
 }
-.portfolio .left-side h3, .chirp .left-side h3, .crappo .left-side h3, .gradie .left-side h3,
- .converter .left-side h3, .harvoxx .left-side h3{
+.portfolio .right-side h3, .chirp .right-side h3, .crappo .right-side h3, .gradie .right-side h3,
+ .converter .right-side h3, .harvoxx .right-side h3{
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #023e8a;;
     margin-bottom: 3%;
 }
-.portfolio .left-side p, .chirp .left-side p, .crappo .left-side p, .gradie .left-side p, 
-.converter .left-side p, .harvoxx .left-side p{
+.portfolio .right-side p, .chirp .right-side p, .crappo .right-side p, .gradie .right-side p, 
+.converter .right-side p, .harvoxx .right-side p{
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
     color: #000106;
     opacity: 0.7;
     line-height: 28px;
 }
-.portfolio .left-side button, .chirp .left-side button, .crappo .left-side button,
- .gradie .left-side button, .converter .left-side button, .harvoxx .left-side button{
+.portfolio .right-side button, .chirp .right-side button, .crappo .right-side button,
+ .gradie .right-side button, .converter .right-side button, .harvoxx .right-side button{
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
@@ -246,27 +247,27 @@ header .bio .illustration img{
     margin-top: 5%;
     margin-left: 5px;
 }
-.portfolio .left-side button:hover, .chirp .left-side button:hover, 
-.crappo .left-side button:hover, .gradie .left-side button:hover, .converter .left-side button:hover,
-.harvoxx .left-side button:hover{
+.portfolio .right-side button:hover, .chirp .right-side button:hover, 
+.crappo .right-side button:hover, .gradie .right-side button:hover, .converter .right-side button:hover,
+.harvoxx .right-side button:hover{
     cursor: pointer;
     color: #FFFF;
-    background-color: #023e8a;;
+    background-color: #023e8a;
 }
 .portfolio .right-side, .chirp .right-side, .crappo .right-side, 
 .gradie .right-side, .converter .right-side, .harvoxx .right-side{
     width: 100%;
     margin-left: 5%;
 }
-.portfolio .right-side img, .chirp .right-side img, .crappo .right-side img, 
-.gradie .right-side img, .converter .right-side img, .harvoxx .right-side img{
+.portfolio .left-side img, .chirp .left-side img, .crappo .left-side img, 
+.gradie .left-side img, .converter .left-side img, .harvoxx .left-side img{
     width: 39rem;
     box-shadow: 2px 8px 8px 5px rgb(159, 168, 218);
     position: relative;
     border-top: 5px solid white;
 }
-.portfolio .right-side img:hover, .chirp .right-side img:hover, .crappo .right-side img:hover,
-.gradie .right-side img:hover, .converter .right-side img:hover, .harvoxx .right-side img:hover{
+.portfolio .left-side img:hover, .chirp .left-side img:hover, .crappo .left-side img:hover,
+.gradie .left-side img:hover, .converter .left-side img:hover, .harvoxx .left-side img:hover{
     cursor: pointer;
 }
 /* Contact-Me Section */
@@ -357,7 +358,7 @@ header .bio .illustration img{
 footer{
     width: 100%;
     height: 70vh;
-    background: linear-gradient(180deg, #8C1F66 0%, #330c2f 15%); 
+    background: linear-gradient(180deg, #8C1F66 30%, #330c2f 100%);
 }
 footer .logo{
     width: 15%;
@@ -400,58 +401,27 @@ footer .copy{
 
 /* Media Query */
 @media only screen and (max-width: 1000px){
-    header nav{
-        display: flex;
-        overflow: hidden;
+    body{
+        width: 100%;
+        height: auto;
+        background-color: #e7c6ff;
+    }
+    header{
         width: 80%;
+    }
+    header #menuBar, header #close{
+        display: inline;
+    }
+    header #home {
+        width: 100%;
+        
+    }
+    header nav .logo .items{
+        display: none;
+    }
+    .portfolio, .chirp, .crappo, .gradie, .converter, .harvoxx{
+        width: 100%;
         margin: auto;
-    }
-    header .logo img{
-        width: 30%;
-        margin-top: -1%;
-        margin-left: -10%;
-    }
-    header .moon-icon{
-        font-size: 18px;
-        padding: 3px 4.6px;
-        margin-top: 20px;
-        margin-right: 1rem;
-    }
-    header .logo .port{
-        display: none;
-    }
-    header .link{
-        font-size: 16px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: rgb(92, 107, 192);
-        text-decoration: none;
-        display: none;
-    }
-    header #menuBar{
-        font-size: 25px;
+        margin-top: 5rem;
         display: block;
-        margin-top: 7%;
-    }
-    header #close{
-        font-size: 25px;
-        margin-top: 7%;
-    }
-    header .bio{
-        width: 90%;
-        margin: auto;
-    }
-    header .bio h1{
-        font-size: 29px;
-        font-weight: 900;
-        text-align: center;
-        overflow: hidden;
-    }
-    header .bio .profile img{
-       margin: auto;
-        width: 10rem;
-    }
-    header .bio .illustration img{
-        margin: auto;
-        width: 10rem;
-    }
 }
