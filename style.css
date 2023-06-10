@@ -306,7 +306,7 @@ header .bio .illustration img{
     padding: 10px 20px;
     box-shadow: rgb(224, 213, 213) 2px 5px 5px 0px;
     position: relative;
-    background-color: rgba(228, 161, 186, 0.95);
+    background-color: #ffff;
     margin-top: 1rem;
     width: 90%;
 }
@@ -316,13 +316,13 @@ header .bio .illustration img{
 }
 .contact-me .phone p i, .contact-me .mail p i{
     font-size: 25px;
-    color: #FFFF;
+    color: rgba(0, 0, 0, 0.5);
     margin-right: 2%;
     margin-top: 2%;
 }
 .contact-me .phone p a, .contact-me .mail p a{
     text-decoration: none;
-    color: #FFFF;
+    color: rgba(0, 0, 0, 0.5);
 }
 /* Form Section */
 .contact-me .address{
@@ -348,7 +348,7 @@ header .bio .illustration img{
     margin-top: 5%;
 }
 .contact-me .address .submit:hover{
-    color: rgb(94, 110, 204);
+    color: #ff7aab;
     cursor: pointer;
     box-shadow: 0 0 35px #FF7AAB;
     border: none;
@@ -418,7 +418,6 @@ footer .copy{
     }
     header #home .logo{
         width: 90%;
-        
     }
     header nav .logo .items{
         display: none;
@@ -502,7 +501,7 @@ footer .copy{
     /* Contact-Me Section */
     .contact-me{
        width: 100vw; 
-       height: 60vh;
+       height: 70vh;
     }
     .contact-me .contact{
         width: 15vw;
@@ -544,6 +543,156 @@ footer .copy{
     }
     footer .copy{
         font-size: 16px;
+        color: white;
+        opacity: 0.9;
+        width: 30vw;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
+/* Dimension: iPhone SE */
+/* Media Query */
+@media only screen and (max-width: 700px){
+    body{
+        width: 100vw;
+        height: auto;
+    }
+    header .bio h1{
+        font-size: 18px;
+    }
+    header .bio .illustration{
+        width: 85vw;
+        margin: auto;
+    }
+    header .bio .illustration img{
+        width: 19rem;
+        margin-bottom: -1%;
+    }
+    .about-me{
+        height: 80vh;
+    }
+    .intro{
+        height: 60vh;
+    }
+    .intro h1{
+        font-size: 18px;
+        padding-top: 10%;
+    }
+    .intro p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .box{
+        width: 65vw;
+        height: 25vh;
+        margin-top: -23%;
+    }
+    .box h1{
+        font-size: 12px;
+    }
+    .box .stack .items div{
+        padding-left: 2rem;
+    }
+    .box .stack .items div p{
+        font-size: 8px;
+        padding-top: 1.3rem;
+    }
+    .box .stack .items div i{
+        font-size: 16px;
+        padding-top: 1rem;
+    }
+    /* Project Section */
+    .title{
+        margin-top: 2rem;
+        margin-left: 6rem;
+    }
+    .title h1{
+        font-size: 18px;
+    }
+    .title img{
+        display: none;
+    }
+    .portfolio, .chirp, .crappo, .gradie, .converter, .harvoxx{
+        width: 80vw;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .portfolio .right-side h3, .chirp .right-side h3, .crappo .right-side h3, .gradie .right-side h3,
+    .converter .right-side h3, .harvoxx .right-side h3{
+        font-size: 14px;
+    }
+    .portfolio .right-side p, .chirp .right-side p, .crappo .right-side p, .gradie .right-side p,
+    .converter .right-side p, .harvoxx .right-side p{
+        width: 60vw;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .portfolio .right-side button, .chirp .right-side button, .crappo .right-side button,
+    .gradie .right-side button, .converter .right-side button, .harvoxx .right-side button{
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    .portfolio .left-side img, .chirp .left-side img, .crappo .left-side img, 
+    .gradie .left-side img, .converter .left-side img, .harvoxx .left-side img{
+        width: 17rem;
+        margin-left: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    /* Contact-Me Section */
+    .contact-me{
+       width: 100vw; 
+       height: 85vh;
+       margin-top: 15%;
+    }
+    .contact-me .contact{
+        width: 15vw;
+    }
+    .contact-me .contact .bxs-contact{
+        display: none;
+    }
+    .contact-me .contact h1{
+        font-size: 18px;
+        margin-top: -1rem;
+        margin-left: -2rem;
+    }
+    .contact-me .phone, .contact-me .mail{
+        width: 72vw;
+        display: flex;
+        margin: auto;
+    }
+    .contact-me .phone p, .contact-me .mail p{
+        font-size: 12px;
+    }
+    .contact-me .phone p i, .contact-me .mail p i{
+        font-size: 12px;
+    }
+    /* Form Section */
+    .contact-me .address{
+        width: 40vw;
+        margin-left: 13.5vw;
+    }
+    .contact-me .address input, .contact-me .address textarea{
+        font-size: 12px;
+        width: 15rem;
+    }
+    .contact-me .address .submit{
+        font-size: 14;
+        width: 17rem;
+        padding: 10px;
+    }
+    /* Footer Section */
+    footer{
+        width: 100vw;
+        height: 45vh;
+    }
+    footer .logo i{
+        font-size: 20px;
+        margin-top: 2rem;
+        /* display: block; */
+    }
+    footer .copy{
+        font-size: 10px;
         color: white;
         opacity: 0.9;
         width: 30vw;
