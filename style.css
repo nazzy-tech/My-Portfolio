@@ -15,6 +15,7 @@ body{
     width: 100vw;
     height: 100vh;
     background: #ffff;
+    overflow-x: hidden;
 }  
 header{
     width: 100vw;
@@ -406,6 +407,7 @@ footer .copy{
         width: 100%;
         height: auto;
         background-color: #FFFF;
+        overflow-x: hidden;
     }
     header{
         width: 100vw;
@@ -557,6 +559,7 @@ footer .copy{
     body{
         width: 100vw;
         height: auto;
+        overflow-x: hidden;
     }
     header .bio h1{
         font-size: 18px;
