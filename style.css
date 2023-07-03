@@ -46,10 +46,16 @@ header .bio span{
     html{
         font-size: 12px;
     }
+    nav .container .pt-2 .navbar-brand img{
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 300px){
     html{
         font-size: 10px;
+    }
+    nav .container .pt-2 .navbar-brand img{
+        width: 35%;
     }
 }
