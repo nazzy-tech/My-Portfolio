@@ -1,3 +1,7 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
 :root{
     --Primary-color: #212529;
     --secondary-color: #ffc107;
@@ -5,7 +9,7 @@
 body::before{
     display: block;
     content: '';
-    height: 60px;
+    height: 75px;
 }
 .text-animation{
     position: relative;
@@ -35,4 +39,17 @@ body::before{
 }
 header .bio span{
     color: var(--secondary-color);
+}
+
+/* Media Query */
+@media screen and (max-width: 500px){
+    html{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    html{
+        font-size: 10px;
+    }
 }
