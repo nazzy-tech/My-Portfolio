@@ -11,6 +11,9 @@ body::before{
     content: '';
     height: 75px;
 }
+.bxl-html5{
+    font-size: 40px;
+}
 .text-animation{
     position: relative;
 }
@@ -23,9 +26,6 @@ body::before{
     width: 80%;
     animation: typing 3s steps(21) alternate infinite,
                 line 1s infinite;
-}
-.bxl-html5{
-    font-size: 50px;
 }
 @keyframes typing{
     to{
@@ -46,18 +46,18 @@ header .bio span{
     html{
         font-size: 12px;
     }
-    nav .container .pt-2 .navbar-brand img{
-        width: 5%;
-        height: 1vh;
-    }
+    /* nav .container .pt-2 .navbar-brand img{ */
+        /* width: 20%; */
+        /* height: 10vh; */
+    /* } */
 }
 
 @media screen and (max-width: 300px){
     html{
         font-size: 10px;
     }
-    nav .container .pt-2 .navbar-brand img{
-        width: 2%;
-        height: 1vh;
-    }
+    /* nav .container .pt-2 .navbar-brand img{ */
+        /* width: 15%; */
+        /* height: 5vh; */
+    /* } */
 }
