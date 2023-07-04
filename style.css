@@ -47,8 +47,8 @@ header .bio span{
         font-size: 12px;
     }
     nav .container .pt-2 .navbar-brand img{
-        width: 15%;
-        height: 50vh;
+        width: 50%;
+        height: 10vh;
     }
 }
 
@@ -57,7 +57,7 @@ header .bio span{
         font-size: 10px;
     }
     nav .container .pt-2 .navbar-brand img{
-        width: 10%;
-        height: 30vh;
+        width: 50%;
+        height: 10vh;
     }
 }
