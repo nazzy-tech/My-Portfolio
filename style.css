@@ -42,7 +42,7 @@ header .bio span{
 }
 
 /* Media Query */
-@include media-breakpoint-up(md){
+@media screen and (min-width) {
     html{
         font-size: 12px;
     }
@@ -52,7 +52,8 @@ header .bio span{
     }
 }
 
-@include media-breakpoint-up(sm){
+@media screen and (min-width
+){
     html{
         font-size: 10px;
     }
