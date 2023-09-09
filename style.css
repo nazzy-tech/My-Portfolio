@@ -92,6 +92,14 @@ header .bio span{
         font-size: 1.3rem;
     }
 
+    .compliment h1{
+        font-size: 1.3rem;
+    }
+
+    .compliment p{
+        font-size: 1rem;
+    }
+
     .d-flex p{
         font-size: 8px;
     }
