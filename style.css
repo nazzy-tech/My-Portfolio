@@ -1,19 +1,33 @@
 *{
     padding: 0%;
     margin: 0%;
+    font-family: 'Open Sans' sans-serif;
 }
 :root{
     --Primary-color: #212529;
     --secondary-color: #ffc107;
 }
+
+body{
+    max-width: 100%;
+}
+
+nav{
+    max-width: 100%;
+}
+
 body::before{
     display: block;
     content: '';
-    height: 75px;
+    height: 50px;
 }
-.bxl-html5{
-    font-size: 40px;
+
+.navbar-brand, .nav-link{
+    font-size: 1rem;
 }
+.logo{
+    font-size: 20px;
+} 
 .text-animation{
     position: relative;
 }
@@ -24,7 +38,7 @@ body::before{
     color: var(--secondary-color);
     background-color: var(--Primary-color);
     width: 80%;
-    animation: typing 3s steps(21) alternate infinite,
+    animation: typing 3s steps(30) alternate infinite,
                 line 1s infinite;
 }
 @keyframes typing{
@@ -41,24 +55,45 @@ header .bio span{
     color: var(--secondary-color);
 }
 
-/* Media Query */
-@media screen and (min-width) {
-    html{
-        font-size: 12px;
-    }
-    nav .container .pt-2 .navbar-brand img{
-        width: 50%;
-        height: 50vh;
-    }
+.btn.border:hover{
+    background-color: #ffff;
+    color: #0d0df0;
 }
 
-@media screen and (min-width
-){
-    html{
-        font-size: 10px;
+
+
+
+/* Media Query */
+@media screen and (min-width: 1024px) {
+
+    .intro h1{
+        font-size: 2.5rem;
     }
-    nav .container .pt-2 .navbar-brand img{
-        width: 30%;
-        height: 20vh;
+    .d-flex p{
+        font-size: 50px;
     }
+
+}
+@media screen and (min-width: 480px){
+
+    .intro h1{
+        font-size: 1.5rem;
+    }
+
+    .d-flex p{
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (min-width: 370px){
+
+    .intro h1{
+        font-size: 1.3rem;
+    }
+
+    .d-flex p{
+        font-size: 8px;
+    }
+
 }

@@ -1,383 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- BOX ICON -->
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top" id="home">
-        <div class="container">
-            <div class="pt-2"> 
-                <a class="navbar-brand" href="#">
-                    <img src="./img/updated_logo-removebg-preview.png" width="100%" height="70vh" alt="">
-                </a>
-            </div>
-
-            <button 
-                class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navmenu"
-                >
-                
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#aboutMe" class="nav-link">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#myProjects" class="nav-link">My Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contactMe" class="nav-link">Contact Me</a>
-                    </li>
-                </ul>
-            <a href="#" class="navbar-mode"></a>
-            </div>
+    <nav
+      class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top"
+      id="home">
+      <div class="container">
+        <div class="pt-2">
+          <a class="navbar-brand" href="#">Portfolio</a>
         </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#aboutMe" class="nav-link">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#myProjects" class="nav-link">My Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contactMe" class="nav-link">Contact Me</a>
+            </li>
+          </ul>
+          <a href="#" class="navbar-mode"></a>
+        </div>
+      </div>
     </nav>
 
     <!-- Showcase -->
     <section class="bg-dark text-light p-5 p-lg-0 text-center text-sm-start">
-        <div class="container">
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
-                    <h1>Hi, my name is Chinaza Jessica</h1>
-                    <h1 class="text-animation">I am a <span class="text-warning">Front-end Developer.</span></h1>
-                    <a href="#myProjects"><button type="button" class="btn btn-primary btn-lg my-4">Click on my Projects</button></a>
-                </div>
-                <img class="img-fluid w-50 d-none d-sm-block" src="./img/showcase.png" alt="">
-            </div>
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div class="intro">
+            <h1>Hi, my name is Chinaza,</h1>
+            <h1 class="text-animation">
+              I'm a <span class="text-warning">Front-end Developer.</span>
+            </h1>
+            <a href="#myProjects"
+              ><button type="button" class="btn btn-primary btn-lg my-4">
+                Download CV
+              </button></a
+            >
+          </div>
+          <img
+            class="img-fluid w-50 d-sm-block"
+            src="./assets/img/AI photo.jpeg"
+            alt=""
+          />
         </div>
+      </div>
     </section>
 
     <!-- About Me -->
     <section class="bg-primary text-light p-5" id="aboutMe">
-        <div class="container">
-            <h1 class="text-center"><strong>NICE TO MEET YOU</strong></h1>
-            <p class="lead text-center">I am a frontend web developer, passionate about building impactful,
-                scalable social and technical systems. I am currently learning some frameworks like BOOTSTRAP and REACT JS 
-                in order to upskill my knowledge as a seasoned developer ready to land tech roles.
-            </p>
-            <h3 class="text-center my-4">My Current Tech Stack</h3>
-            <div class="row text-center g-4">
-                <div class="col-md-3 col-lg-2">
-                    <div class="card bg-light text-center">
-                        <span class="text-dark mt-4"><i class='bx bxl-html5 co'></i></span>
-                        <h5 class="card-title mb-3 text-dark">HTML</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-2">
-                    <div class="card bg-light text-center">
-                        <span class="text-dark mt-4"><i class='bx bxl-html5 co'></i></span>
-                        <h5 class="card-title mb-3 text-dark">CSS</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-2">
-                    <div class="card bg-light text-center">
-                        <span class="text-dark mt-4"><i class='bx bxl-html5 co'></i></span>
-                        <h5 class="card-title mb-3 text-dark">JavaScript ES6</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-2">
-                    <div class="card bg-light text-center">
-                        <span class="text-dark mt-4"><i class='bx bxl-html5 co'></i></span>
-                        <h5 class="card-title mb-3 text-dark">React JS</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-2">
-                    <div class="card bg-light text-center">
-                        <span class="text-dark mt-4"><i class='bx bxl-html5 co'></i></span>
-                        <h5 class="card-title mb-3 text-dark">Responsiveness</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-2">
-                    <div class="card bg-light text-center">
-                        <span class="text-dark mt-4"><i class='bx bxl-html5 co'></i></span>
-                        <h5 class="card-title mb-3 text-dark">GitHub</h5>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="text-center"><strong>NICE TO MEET YOU</strong></h1>
+        <p class="lead text-center">
+          I am a frontend web developer, passionate about building impactful,
+          scalable social and technical systems. I am currently learning some
+          frameworks like BOOTSTRAP and REACT JS in order to upskill my
+          knowledge as a seasoned developer ready to land tech roles.
+        </p>
+        <h3 class="text-center my-4">My Current Tech Stack</h3>
+        <div class="row text-center g-4">
+          <div class="col-md-3 col-lg-2 col-xs-4">
+            <div class="card bg-light text-center">
+              <span class="text-dark mt-4">
+                <box-icon class="logo" type="logo" name="html5"></box-icon>
+              </span>
+              <h5 class="card-title mb-3 text-dark">HTML5</h5>
             </div>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xs-4">
+            <div class="card bg-light text-center">
+              <span class="text-dark mt-4">
+                <box-icon class="logo" type="logo" name="css3"></box-icon>
+              </span>
+              <h5 class="card-title mb-3 text-dark">CSS3</h5>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xs-4">
+            <div class="card bg-light text-center">
+              <span class="text-dark mt-4">
+                <box-icon class="logo" type="logo" name="javascript"></box-icon>
+              </span>
+              <h5 class="card-title mb-3 text-dark">JavaScript ES6</h5>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xs-4">
+            <div class="card bg-light text-center">
+              <span class="text-dark mt-4">
+                <box-icon class="logo" type="logo" name="react"></box-icon>
+              </span>
+              <h5 class="card-title mb-3 text-dark">React JS</h5>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xs-4">
+            <div class="card bg-light text-center">
+              <span class="text-dark mt-4">
+                <box-icon class="logo" type="logo" name="html5"></box-icon>
+              </span>
+              <h5 class="card-title mb-3 text-dark">Responsiveness</h5>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xs-4">
+            <div class="card bg-light text-center">
+              <span class="text-dark mt-4">
+                <box-icon class="logo" type="logo" name="github"></box-icon>
+              </span>
+              <h5 class="card-title mb-3 text-dark">GitHub</h5>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Boxes -->
     <section class="p-5" id="myProjects">
-        <div class="container">
-            <h1 class="text-center text-primary mb-4"><strong>MY PROJECTS</strong></h1>
-            <div class="row text-center g-4">
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <img class="img-fluid w-50" src="./img/Gradie Capture.PNG" alt="">
-                        </div>
-                        <h3 class="card-title mb-3 text-warning">
-                            Gradie
-                        </h3>
-                        <p class="card-text px-3">
-                            My first portfolio website which encapsulates all my current skills 
-                            in Web Development so far. It holds a number of projects I've worked on,
-                            and some cool interactive features, feel free to mess around and explore.
-                        </p>
-                        <div  class="d-sm-flex align-items-center justify-content-center my-4">
-                            <a href="https://nazzy-tech.github.io/Gradie-/" class="btn btn-primary mx-2" >See Live</a>
-                            <a href="https://github.com/nazzy-tech/Gradie-" class="btn border border-primary text-light">View Source</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-secondary text-light">
-                        <div class="card-body text-center">
-                            <img class="img-fluid w-50" src="./img/portfolio.PNG" alt="">
-                        </div>
-                        <h3 class="card-title mb-3 text-warning">
-                            Portfolio
-                        </h3>
-                        <p class="card-text px-3">
-                            My first portfolio website which encapsulates all my current skills 
-                            in Web Development so far. It holds a number of projects I've worked on,
-                            and some cool interactive features, feel free to mess around and explore.
-                        </p>
-                        <div  class="d-sm-flex align-items-center justify-content-center my-4">
-                            <a href="https://nazzy-tech.github.io/My-Portfolio/" class="btn btn-primary mx-2" >See Live</a>
-                            <a href="https://github.com/nazzy-tech/My-Portfolio" class="btn border border-primary text-light">View Source</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <img class="img-fluid w-50" src="./img/Converter Capture.PNG" alt="">
-                        </div>
-                        <h3 class="card-title mb-3 text-warning">
-                            Weight Converter
-                        </h3>
-                        <p class="card-text px-3">
-                            My first portfolio website which encapsulates all my current skills 
-                            in Web Development so far. It holds a number of projects I've worked on,
-                            and some cool interactive features, feel free to mess around and explore.
-                        </p>
-                        <div  class="d-sm-flex align-items-center justify-content-center my-4">
-                            <a href="https://nazzy-tech.github.io/Weight-Converter-Project/" class="btn btn-primary mx-2" >See Live</a>
-                            <a href="https://github.com/nazzy-tech/Weight-Converter-Project" class="btn border border-primary text-light">View Source</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="text-center text-primary mb-4">
+          <strong>MY PROJECTS</strong>
+        </h1>
+        <div class="row text-center g-4">
+          <div class="col-md col-xs-4">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <img
+                  class="img-fluid w-50"
+                  src="./assets/img/Gradie Capture.PNG"
+                  alt=""
+                />
+              </div>
+              <h3 class="card-title mb-3 text-warning">Gradie</h3>
+              <p class="card-text px-3">
+                My first portfolio website which encapsulates all my current
+                skills in Web Development so far. It holds a number of projects
+                I've worked on, and some cool interactive features, feel free to
+                mess around and explore.
+              </p>
+              <div
+                class="d-sm-flex align-items-center justify-content-center my-4"
+              >
+                <a
+                  href="https://nazzy-tech.github.io/Gradie-/"
+                  class="btn btn-primary mx-2"
+                  >See Live</a
+                >
+                <a
+                  href="https://github.com/nazzy-tech/Gradie-"
+                  class="btn border border-primary text-light"
+                  >View Source</a
+                >
+              </div>
             </div>
-            <div class="row text-center my-4">
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <img class="img-fluid w-50" src="./img/Harvoxx Capture.PNG" alt="">
-                        </div>
-                        <h3 class="card-title mb-3 text-warning">
-                            Harvoxx Website
-                        </h3>
-                        <p class="card-textb px-3">
-                            My first portfolio website which encapsulates all my current skills 
-                            in Web Development so far. It holds a number of projects I've worked on,
-                            and some cool interactive features, feel free to mess around and explore.
-                        </p>
-                        <div  class="d-sm-flex align-items-center justify-content-center my-4">
-                            <a href="#" class="btn btn-primary mx-2" >See Live</a>
-                            <a href="#" class="btn border border-primary text-light">View Source</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-secondary text-light">
-                        <div class="card-body text-center">
-                            <img class="img-fluid w-50" src="./img/Crappo Capture.PNG" alt="">
-                        </div>
-                        <h3 class="card-title mb-3 text-warning">
-                            Crappo
-                        </h3>
-                        <p class="card-text px-3">
-                            My first portfolio website which encapsulates all my current skills 
-                            in Web Development so far. It holds a number of projects I've worked on,
-                            and some cool interactive features, feel free to mess around and explore.
-                        </p>
-                        <div  class="d-sm-flex align-items-center justify-content-center my-4">
-                            <a href="#" class="btn btn-primary mx-2" >See Live</a>
-                            <a href="#" class="btn border border-primary text-light">View Source</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <img class="img-fluid w-50" src="./img/Chirp capture.PNG" alt="">
-                        </div>
-                        <h3 class="card-title mb-3 text-warning">
-                            Chirp
-                        </h3>
-                        <p class="card-text px-3">
-                            My first portfolio website which encapsulates all my current skills 
-                            in Web Development so far. It holds a number of projects I've worked on,
-                            and some cool interactive features, feel free to mess around and explore.
-                        </p>
-                        <div  class="d-sm-flex align-items-center justify-content-center my-4">
-                            <a href="#" class="btn btn-primary mx-2" >See Live</a>
-                            <a href="#" class="btn border border-primary text-light">View Source</a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md col-xs-4">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <img class="img-fluid w-50" src="./assets/img/portfolio.PNG" alt="" />
+              </div>
+              <h3 class="card-title mb-3 text-warning">Portfolio</h3>
+              <p class="card-text px-3">
+                My first portfolio website which encapsulates all my current
+                skills in Web Development so far. It holds a number of projects
+                I've worked on, and some cool interactive features, feel free to
+                mess around and explore.
+              </p>
+              <div
+                class="d-sm-flex align-items-center justify-content-center my-4"
+              >
+                <a
+                  href="https://nazzy-tech.github.io/My-Portfolio/"
+                  class="btn btn-primary mx-2"
+                  >See Live</a
+                >
+                <a
+                  href="https://github.com/nazzy-tech/My-Portfolio"
+                  class="btn border border-primary text-light"
+                  >View Source</a
+                >
+              </div>
             </div>
+          </div>
+          <div class="col-md col-xs-4">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <img
+                  class="img-fluid w-50"
+                  src="./assets/img/Converter Capture.PNG"
+                  alt=""
+                />
+              </div>
+              <h3 class="card-title mb-3 text-warning">Weight Converter</h3>
+              <p class="card-text px-3">
+                My first portfolio website which encapsulates all my current
+                skills in Web Development so far. It holds a number of projects
+                I've worked on, and some cool interactive features, feel free to
+                mess around and explore.
+              </p>
+              <div
+                class="d-sm-flex align-items-center justify-content-center my-4"
+              >
+                <a
+                  href="https://nazzy-tech.github.io/Weight-Converter-Project/"
+                  class="btn btn-primary mx-2"
+                  >See Live</a
+                >
+                <a
+                  href="https://github.com/nazzy-tech/Weight-Converter-Project"
+                  class="btn border border-primary text-light"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="row text-center my-4">
+          <div class="col-md col-xs-4">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <img
+                  class="img-fluid w-50"
+                  src="./assets/img/Harvoxx Capture.PNG"
+                  alt=""
+                />
+              </div>
+              <h3 class="card-title mb-3 text-warning">Harvoxx Website</h3>
+              <p class="card-textb px-3">
+                My first portfolio website which encapsulates all my current
+                skills in Web Development so far. It holds a number of projects
+                I've worked on, and some cool interactive features, feel free to
+                mess around and explore.
+              </p>
+              <div
+                class="d-sm-flex align-items-center justify-content-center my-4"
+              >
+                <a href="#" class="btn btn-primary mx-2">See Live</a>
+                <a href="#" class="btn border border-primary text-light"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md col-xs-4">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <img
+                  class="img-fluid w-50"
+                  src="./assets/img/Crappo Capture.PNG"
+                  alt=""
+                />
+              </div>
+              <h3 class="card-title mb-3 text-warning">Crappo</h3>
+              <p class="card-text px-3">
+                My first portfolio website which encapsulates all my current
+                skills in Web Development so far. It holds a number of projects
+                I've worked on, and some cool interactive features, feel free to
+                mess around and explore.
+              </p>
+              <div class="d-sm-flex align-items-center justify-content-center my-4">
+                <a href="#" class="btn btn-primary mx-2">See Live</a>
+                <a href="#" class="btn border border-primary text-light">View Source</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md col-xs-4">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <img
+                  class="img-fluid w-50"
+                  src="./assets/img/Chirp Capture (1).PNG"
+                  alt=""
+                />
+              </div>
+              <h3 class="card-title mb-3 text-warning">Chirp</h3>
+              <p class="card-text px-3">
+                My first portfolio website which encapsulates all my current
+                skills in Web Development so far. It holds a number of projects
+                I've worked on, and some cool interactive features, feel free to
+                mess around and explore.
+              </p>
+              <div
+                class="d-sm-flex align-items-center justify-content-center my-4"
+              >
+                <a href="#" class="btn btn-primary mx-2">See Live</a>
+                <a href="#" class="btn border border-primary text-light"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section class="bg-primary text-light p-5" id="contactMe">
-        <div class="container border border-warning border-2 rounded">
-            <h2 class="text-center mt-4">CONTACT INFO</h2>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Name</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="full name">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="enter your email address">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-warning mb-4">Submit</button>
+      <div class="container border border-warning border-2 rounded">
+        <h2 class="text-center mt-4">CONTACT INFO</h2>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Name</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="full name"
+          />
         </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="enter your email address"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Comment</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning mb-4">Submit</button>
+      </div>
     </section>
-    
+
     <!-- Footer -->
-    <footer class="p-5 bg-dark text-white  position-relative">
-        <div class="container">
-            <div class="d-flex justify-content-around">
-                <div class="pt-2 w-52"> 
-                    <a class="navbar-brand" href="#">
-                        <img src="./img/updated_logo-removebg-preview.png" width="15%" height="50vh" alt="">
-                    </a>
-                    <p>As a Frontend developer, I believe in operating with utmost integrity,
-                        treating clients, partners and employees with respect and fairness.
-                    </p>
-                    <a href="https://twitter.com/chinazajessica4"><i class="bi bi-twitter"></i></a>
-                    <a href="https://github.com/nazzy-tech"><i class="bi bi-github px-4"></i></a>
-                    <a href="https://www.linkedin.com/in/chinaza-mbah-7412031b5"><i class="bi bi-linkedin"></i></a>
-                </div>
-                <div class="w-50">
-                    <h4>Quick Links</h4>
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link">Home</a>
-                        </li> 
-                        <li class="nav-item">
-                            <a href="#aboutMe" class="nav-link">About Me</a> 
-                        </li>
-                        <li class="nav-item">
-                            <a href="#myProjects" class="nav-link">My Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contactMe" class="nav-link">Contact Me</a>
-                        </li> 
-                    </ul> 
-                </div>
-                <div class="w-50">
-                    <h4>Contact Me</h4>
-                    <p>
-                        <i class="bi bi-whatsapp px-2"></i>
-                        <a href="tel:+2348065599899">+2348065599899</a>
-                    </p>
-                    <p>
-                        <i class="bi bi-telephone px-2"></i>
-                        <a href="tel:+2349055504848">+2349055504848</a>
-                    </p>
-                    <p>
-                        <i class="bi bi-envelope px-2"></i>
-                        <a href="mailto:mbahchinazajessica@gmail.com">mbahchinazajessica@gmail.com</a>
-                    </p>
-                </div>
-                <!-- <div class="col-md"> -->
-                    <!-- <div class="text-light"> -->
-                        <!-- <div class="card-body text-center"> -->
-                            
-                        <!-- </div> -->
-
-                    <!-- </div> -->
-                <!-- </div> -->
-                <!-- <div class="col-md"> -->
-                    <!-- <div class="text-light"> -->
-                        <!-- <div class="card-body text-center"> -->
-                           <!-- <h4>Quick Links</h4> -->
-                           <!-- <ul class="navbar-nav ms-auto"> -->
-                            <!-- <li class="nav-item"> -->
-                                <!-- <a href="#home" class="nav-link">Home</a> -->
-                            <!-- </li> -->
-                            <!-- <li class="nav-item"> -->
-                                <!-- <a href="#aboutMe" class="nav-link">About Me</a> -->
-                            <!-- </li> -->
-                            <!-- <li class="nav-item"> -->
-                                <!-- <a href="#myProjects" class="nav-link">My Projects</a> -->
-                            <!-- </li> -->
-                            <!-- <li class="nav-item"> -->
-                                <!-- <a href="#contactMe" class="nav-link">Contact Me</a> -->
-                            <!-- </li> -->
-                        <!-- </ul> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
-                <!-- </div> -->
-                <!-- <div class="col-md"> -->
-                    <!-- <div class="text-light"> -->
-                        <!-- <div class="card-body text-center"> -->
-                            <!-- <h4>Contact Me</h4> -->
-                            <!-- <p> -->
-                                <!-- <i class="bi bi-whatsapp"></i> -->
-                                <!-- <a href="tel:+2348065599899">+2348065599899</a> -->
-                            <!-- </p> -->
-                            <!-- <p> -->
-                                <!-- <i class="bi bi-telephone"></i> -->
-                                <!-- <a href="tel:+2349055504848">+2349055504848</a> -->
-                            <!-- </p> -->
-                            <!-- <p> -->
-                                <!-- <i class="bi bi-envelope"></i> -->
-                                <!-- <a href="mailto:mbahchinazajessica@gmail.com">mbahchinazajessica@gmail.com</a> -->
-                            <!-- </p> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
-                <!-- </div> -->
-            </div>
+    <footer class=" p-5 bg-dark text-white position-relative">
+      <div class="container grid">
+        <div class="card-body">
+          <a class="navbar-brand" href="#"><h4>Portfolio</h4></a>
+          <p>
+            As a Frontend developer, I believe in operating with utmost
+            integrity, treating clients, partners and employees with respect
+            and fairness.
+          </p>
+          <a href="https://twitter.com/chinazajessica4"
+            ><i class="bi bi-twitter"></i
+          ></a>
+          <a href="https://github.com/nazzy-tech"
+            ><i class="bi bi-github px-4"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/chinaza-mbah-7412031b5"
+            ><i class="bi bi-linkedin"></i
+          ></a>
         </div>
-        <div class="container">
-            <hr><div class="container">
-                <div class="d-flex">
-                    <p >&copy; 2023, Made by Chinaza</p>
-                    <p class="ms-auto">All Rights Reserved</p>
-                </div>
+  
+        <div class="card-body">
+          <h4>Quick Links</h4>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#aboutMe" class="nav-link">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#myProjects" class="nav-link">My Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contactMe" class="nav-link">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class=" container card-body">
+          <h4>Contact Me</h4>
+          <p>
+            <i class="bi bi-whatsapp"></i>
+            <a href="tel:+2348065599899">+2348065599899</a>
+          </p>
+          <p>
+            <i class="bi bi-telephone"></i>
+            <a href="tel:+2349055504848">+2349055504848</a>
+          </p>
+          <p>
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:mbahchinazajessica@gmail.com"
+              >mbahchinazajessica@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
 
-                <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                    <i class="bi bi-arrow-up-circle h1"></i>
-                </a>
-            </div>
+      <hr />
+        <div class="container">
+          <div class="d-flex">
+            <p>&copy; 2023, Made by Chinaza</p>
+            <p class="ms-auto">All Rights Reserved</p>
+          </div>
+
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h4 "></i>
+          </a>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous">
-    </script>
-</body>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
+
+<!-- <div class="d-flex justify-content-around">
+    <div class="w-50"> 
+        <div> 
+            <a class="navbar-brand" href="#"><h4>Portfolio</h4></a>
+        </div>
+        <p>As a Frontend developer, I believe in operating with utmost integrity,
+            treating clients, partners and employees with respect and fairness.
+        </p>
+        <a href="https://twitter.com/chinazajessica4"><i class="bi bi-twitter"></i></a>
+        <a href="https://github.com/nazzy-tech"><i class="bi bi-github px-4"></i></a>
+        <a href="https://www.linkedin.com/in/chinaza-mbah-7412031b5"><i class="bi bi-linkedin"></i></a>
+    </div>
+    <div class="w-50">
+        <h4>Quick Links</h4>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+            </li> 
+            <li class="nav-item">
+                <a href="#aboutMe" class="nav-link">About Me</a> 
+            </li>
+            <li class="nav-item">
+                <a href="#myProjects" class="nav-link">My Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contactMe" class="nav-link">Contact Me</a>
+            </li> 
+        </ul> 
+    </div>
+    <div class="w-50">
+        <h4>Contact Me</h4>
+        <p>
+            <i class="bi bi-whatsapp px-2"></i>
+            <a href="tel:+2348065599899">+2348065599899</a>
+        </p>
+        <p>
+            <i class="bi bi-telephone px-2"></i>
+            <a href="tel:+2349055504848">+2349055504848</a>
+        </p>
+        <p>
+            <i class="bi bi-envelope px-2"></i>
+            <a href="mailto:mbahchinazajessica@gmail.com">mbahchinazajessica@gmail.com</a>
+        </p>
+    </div> -->
