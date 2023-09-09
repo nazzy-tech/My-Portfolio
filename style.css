@@ -25,9 +25,12 @@ body::before{
 .navbar-brand, .nav-link{
     font-size: 1rem;
 }
-.logo{
-    font-size: 20px;
-} 
+
+.download{
+    color: #ffff;
+    padding-top: 8px;
+}
+
 .text-animation{
     position: relative;
 }
