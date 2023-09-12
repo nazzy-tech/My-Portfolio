@@ -63,6 +63,22 @@ header .bio span{
     color: #0d0df0;
 }
 
+/* Footer */
+
+footer .grid{
+    display: grid;
+    grid-template-columns: 500px 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.grid-item .contact .bi-whatsapp, .grid-item .contact .bi-telephone, .grid-item .contact .bi-envelope{
+   padding-right: 10px;
+}
+
+.container .d-flex p{
+    font-size: 1rem;
+}
+
 
 
 
@@ -70,10 +86,19 @@ header .bio span{
 @media screen and (min-width: 1024px) {
 
     .intro h1{
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     .d-flex p{
         font-size: 50px;
+    }
+    
+    footer .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2.5rem;
+    }
+    .grid-item h4{
+        font-size: 1rem;
     }
 
 }
@@ -85,6 +110,14 @@ header .bio span{
 
     .d-flex p{
         font-size: 8px;
+    }
+    footer .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2.5rem;
+    }
+    .grid-item h4{
+        font-size: 1rem;
     }
 
 }
@@ -103,8 +136,35 @@ header .bio span{
         font-size: 1rem;
     }
 
-    .d-flex p{
-        font-size: 8px;
+    footer .grid{
+        display: grid;
+        grid-template-columns: 100px 1fr 1fr;
+        gap: 0.5rem;
     }
+    .grid-item h4{
+        font-size: 1rem;
+    }
+
+    .grid .grid-item .comment, .grid .grid-item .nav-link, .grid .grid-item .contact{
+        font-size: 0.5rem;
+    }
+
+    .grid .grid-item .bi-twitter, .grid .grid-item .bi-github, .grid .grid-item .bi-linkedin{
+        font-size: 10px;
+        
+    }
+
+    .grid-item .contact .bi-whatsapp, .grid-item .contact .bi-telephone, .grid-item .contact .bi-envelope{
+        padding-right: 2px;
+     }
+     
+
+    .container .d-flex p{
+        font-size: 10px;
+    }
+
+    /* .container .arrow .bi-arrow-up-circle{
+        margin-top: -10%;
+    } */
 
 }
