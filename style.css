@@ -58,8 +58,8 @@ header .bio span{
     color: var(--secondary-color);
 }
 
-.btn.border:hover{
-    background-color: #ffff;
+.container .sub-container .main .sub-main a:hover{
+    background-color: #eceaea;
     color: #0d0df0;
 }
 
@@ -71,8 +71,17 @@ footer .grid{
     gap: 2.5rem;
 }
 
+footer .container .grid-item p, footer .container .grid-item .nav-link{
+    opacity: 0.8;
+}
+
+.grid-item h4{
+    font-size: 1.2rem;
+} 
+
 .grid-item .contact .bi-whatsapp, .grid-item .contact .bi-telephone, .grid-item .contact .bi-envelope{
    padding-right: 10px;
+   opacity: 0.8;
 }
 
 .container .d-flex p{
@@ -82,47 +91,16 @@ footer .grid{
 
 
 
-/* Media Query */
-@media screen and (min-width: 1024px) {
-
-    .intro h1{
-        font-size: 3rem;
-    }
-    .d-flex p{
-        font-size: 50px;
-    }
+/* Media Query*/ 
+@media screen and (max-width: 1024px) {
     
     footer .grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 2.5rem;
-    }
-    .grid-item h4{
-        font-size: 1rem;
-    }
-
-}
-@media screen and (min-width: 480px){
-
-    .intro h1{
-        font-size: 1.5rem;
-    }
-
-    .d-flex p{
-        font-size: 8px;
-    }
-    footer .grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 2.5rem;
-    }
-    .grid-item h4{
-        font-size: 1rem;
+        display: block;
     }
 
 }
 
-@media screen and (min-width: 370px){
+@media only screen and (max-width: 375px){
 
     .intro h1{
         font-size: 1.3rem;
@@ -137,9 +115,7 @@ footer .grid{
     }
 
     footer .grid{
-        display: grid;
-        grid-template-columns: 100px 1fr 1fr;
-        gap: 0.5rem;
+        display: block;
     }
     .grid-item h4{
         font-size: 1rem;
@@ -156,12 +132,15 @@ footer .grid{
 
     .grid-item .contact .bi-whatsapp, .grid-item .contact .bi-telephone, .grid-item .contact .bi-envelope{
         padding-right: 2px;
-     }
+    }
      
+    .grid-item .contact a{
+        font-size: 8px;
+    }
 
     .container .d-flex p{
         font-size: 10px;
-    }
+    } 
 
     /* .container .arrow .bi-arrow-up-circle{
         margin-top: -10%;
